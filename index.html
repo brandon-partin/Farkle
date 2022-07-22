@@ -12,11 +12,11 @@
 		<!-- Dice images -->
 		<div class="dice"> 
 			<img src="images/1.png" id="die1" data-number="0" onclick="diceClick(this)">
-			<img src="images/2.png" id="die2" data-number="1" onclick="diceClick(this)">
-			<img src="images/3.png" id="die3" data-number="2" onclick="diceClick(this)">
-			<img src="images/4.png" id="die4" data-number="3" onclick="diceClick(this)">
-			<img src="images/5.png" id="die5" data-number="4" onclick="diceClick(this)">
-			<img src="images/6.png" id="die6" data-number="5" onclick="diceClick(this)">
+			<img src="images/1.png" id="die2" data-number="1" onclick="diceClick(this)">
+			<img src="images/1.png" id="die3" data-number="2" onclick="diceClick(this)">
+			<img src="images/1.png" id="die4" data-number="3" onclick="diceClick(this)">
+			<img src="images/1.png" id="die5" data-number="4" onclick="diceClick(this)">
+			<img src="images/1.png" id="die6" data-number="5" onclick="diceClick(this)">
 		</div>
 	</div>
 	<!-- Scoring -->
@@ -25,7 +25,23 @@
 	<!-- Button row -->
 	<div class="row">
 		<button class="button roll column" onclick="rollDice()">Roll Dice</button>
-		<button class="button bank column">Bank Score</button>
+		<button class="button bank column" onclick="bankScore()">Bank Score</button>
+	</div>
+    <br>
+	<!-- Player 1 -->
+	<div class="row">
+	<div class="column">
+		<h3>Player One</h3>
+		<p>Total Score: <span id="player1Total">0</span></p>
+		<p>Points This Roll: <span id="player1Roll">0</span></p>
+		<p>Points This Round: <span id="player1Round">0</span></p>
+	</div>
+		<div class="column">
+			<h3>Player Two</h3>
+			<p>Total Score: <span id="player2Total">0</span></p>
+			<p>Points This Roll: <span id="player2Roll">0</span></p>
+		<p>Points This Round: <span id="player2Round">0</span></p>
+		</div>
 	</div>
 </body>
 </html>
